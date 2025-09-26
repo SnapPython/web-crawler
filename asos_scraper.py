@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-class AsoaScraper:
+class AsosScraper:
     def __init__(self):
         # 设置Chrome选项
         self.chrome_options = Options()
@@ -243,5 +243,5 @@ class AsoaScraper:
 if __name__ == "__main__":
     # 创建爬虫实例并开始爬取数据
     # 可以通过参数控制爬取的页面范围，默认只爬取第1页进行测试
-    scraper = AsoaScraper()
+    scraper = AsosScraper()
     scraper.start_scraping(start_page=1, end_page=1)
